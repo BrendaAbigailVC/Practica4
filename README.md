@@ -43,5 +43,4 @@ Código máquina: Escribe el código máquina almacenado del archivo blink.bin e
 
 ## Lógica del programa en código de alto nivel 
 
-<img width="517" alt="CodigoLogica" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/2c7d6223-4c28-491c-9320-278f9851b350">
-
+<img width="438" alt="CodigoLogica" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/30b4a4d4-ab0c-4799-855e-0c65814f692e">
