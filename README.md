@@ -1,7 +1,7 @@
 # Practica de laboratorio 5
 
 
-##Funcionamiento del proyecto
+## Funcionamiento del proyecto
 
-##Compilacion del software
+## Compilacion del software
 
