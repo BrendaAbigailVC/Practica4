@@ -30,11 +30,7 @@ Para el funcionamiento de la blue-pill se necesita la instalación del siguiente
 
 * Lectura: Lee la tarjeta de desarrollo blue pill mediante el comando: st-flash read dummy.bin 0 0xFFFF
 
-* Ensamble: Se ensambla el contenido del archivo blink.s mediante el comando: arm-as blink.s -o blink.o 
-
-* Objeto binario: Se construye un objeto binario a partir del objeto blink.o mediante el comando: arm-objcopy -O binary blink.o blink.bin
-
-* Código máquina: Escribe el código máquina almacenado del archivo blink.bin en la memoria flash del µC mediante el comando st-flash write 'blink.bin' 0x8000000
+* Al tener el archivo MAKEFILE primero utilizamos el comando make clean para verificar que no tenemos archivos .o innecesarios. Luego ejecutamos el comando make para crear los archivos .o que si se requieren. Por último escribimos el código máquina almacenado del archivo prog.bin en la memoria flash del µC mediante el comando st-flash write prog.bin' 0x8000000
 
 ## Diagrama electronico del circuito
 <img width="218" alt="n" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/ebc3bb72-86f8-41f4-b6fe-289420e53c4b">
