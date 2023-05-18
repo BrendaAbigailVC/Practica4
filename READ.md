@@ -48,10 +48,17 @@ Cuando se presiona un botón mecánico, dos contactos de metal chocan entre sí 
 Existen soluciones tanto de hardware como de software para eliminar los efectos de rebote. Estas soluciones se denominan debouncing(antirrebote).
 La técnica de eliminación de rebotes de software más fácil es la técnica wait-and-see. Cuando el programa detecta que se presiona un botón, vuelve a examinar la señal de entrada después de un breve retraso, generalmente entre 20 y 50 ms. Si la señal de entrada aún muestra que se presionó el botón, el programa informa que el botón se presionó efectivamente. 
 
+<img width="216" alt="Captura de pantalla 2023-05-18 a la(s) 10 29 41 a m" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/569bdf74-a011-4ae8-aecc-334e4481e8ca">
+
+
 ### is_button_pressed
 La función detecta si se están presionando alguno de los dos botones y a partir de eso poder determinar que realizar en este caso incrementar, decrementar o resetear la variable que representa el número en binario. 
 
-### setup
+<img width="226" alt="Captura de pantalla 2023-05-18 a la(s) 10 27 24 a m" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/8217002a-e6d5-4728-b3c7-d43b4f969161">
+
+### main
 
 En la primera parte de esta función se hace la configuración de los pines de salida y de entrada de la blue pill. 
 En la segunda parte está la lógica que determina cómo deben de encender los LEDs en este caso representando una variable binaria.
+
+<img width="216" alt="Captura de pantalla 2023-05-18 a la(s) 10 24 10 a m" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/f6db5edb-71c9-49b5-953d-274660eca62e">
