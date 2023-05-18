@@ -45,3 +45,18 @@ Para el funcionamiento de la blue-pill se necesita la instalación del siguiente
 
 <img width="438" alt="CodigoLogica" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/30b4a4d4-ab0c-4799-855e-0c65814f692e">
 
+## Funciones
+
+### wait_ms
+Cuando se presiona un botón mecánico, dos contactos de metal chocan entre sí e inmediatamente rebotan un par de veces antes de fijarse. Estos rebotes producen múltiples señales en unos pocos milisegundos debido a los efectos de rebote.
+Existen soluciones tanto de hardware como de software para eliminar los efectos de rebote. Estas soluciones se denominan debouncing(antirrebote).
+La técnica de eliminación de rebotes de software más fácil es la técnica wait-and-see. Cuando el programa detecta que se presiona un botón, vuelve a examinar la señal de entrada después de un breve retraso, generalmente entre 20 y 50 ms. Si la señal de entrada aún muestra que se presionó el botón, el programa informa que el botón se presionó efectivamente. 
+
+### is_button_pressed
+La función detecta si se están presionando alguno de los dos botones y a partir de eso poder determinar que realizar en este caso incrementar, decrementar o resetear la variable que representa el número en binario. 
+
+### setup
+
+En la primera parte de esta función se hace la configuración de los pines de salida y de entrada de la blue pill. 
+En la segunda parte está la lógica que determina cómo deben de encender los LEDs en este caso representando una variable binaria.
+
