@@ -37,8 +37,7 @@ Para el funcionamiento de la blue-pill se necesita la instalación del siguiente
 * Código máquina: Escribe el código máquina almacenado del archivo blink.bin en la memoria flash del µC mediante el comando st-flash write 'blink.bin' 0x8000000
 
 ## Diagrama electronico del circuito
- <img width="248" alt="n" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/04a3bf39-0114-4927-9820-cfb0109154fa">
-<img width="237" alt="m" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/83d17de9-36b5-4c72-a41d-de2a500976bf">
+
  
 ## Lógica del programa en código de alto nivel 
 
