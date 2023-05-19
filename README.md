@@ -41,6 +41,8 @@ Para el funcionamiento de la blue-pill se necesita la instalación del siguiente
 
  <img width="218" alt="m" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/c040f277-fa84-4898-a1cf-c6ef15f3d2ba">
 
+![Circuito](https://github.com/BrendaAbigailVC/Practica4/assets/109320578/ac36ea0d-788c-4ba7-a563-743dc852c441)
+
 ## Lógica del programa en código de alto nivel 
 
 <img width="438" alt="CodigoLogica" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/30b4a4d4-ab0c-4799-855e-0c65814f692e">
@@ -52,20 +54,21 @@ Cuando se presiona un botón mecánico, dos contactos de metal chocan entre sí 
 Existen soluciones tanto de hardware como de software para eliminar los efectos de rebote. Estas soluciones se denominan debouncing(antirrebote).
 La técnica de eliminación de rebotes de software más fácil es la técnica wait-and-see. Cuando el programa detecta que se presiona un botón, vuelve a examinar la señal de entrada después de un breve retraso, generalmente entre 20 y 50 ms. Si la señal de entrada aún muestra que se presionó el botón, el programa informa que el botón se presionó efectivamente. 
 
-<img width="216" alt="Captura de pantalla 2023-05-18 a la(s) 10 29 41 a m" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/e616c9e8-b26e-4d35-b01b-f0d5f17fd7ff">
+<img width="216" alt="Captura de pantalla 2023-05-18 a la(s) 10 29 41 a m" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/7b81d8cb-8ef6-4674-beab-6838e7218fa7">
 
-
-### is_button_pressed
+### actions
 La función detecta si se están presionando alguno de los dos botones y a partir de eso poder determinar que realizar en este caso incrementar, decrementar o resetear la variable que representa el número en binario. 
 
-<img width="226" alt="Captura de pantalla 2023-05-18 a la(s) 10 27 24 a m" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/76a1c423-21f7-4a2b-8041-a5ca113ba0f1">
+<img width="218" alt="Captura de pantalla 2023-05-19 a la(s) 11 02 02 a m" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/bb307f67-6438-4e5b-a821-f396c4766926">
 
+### is_button_pressed
+Lo que hace esta funcion es eliminar el efecto debouncing al momento de presionar los botones.
+
+<img width="205" alt="Captura de pantalla 2023-05-19 a la(s) 11 01 07 a m" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/5ca9d3a9-d7ae-493f-a150-2f8f3996ac39">
 
 ### setup
 
 En la primera parte de esta función se hace la configuración de los pines de salida y de entrada de la blue pill. 
 En la segunda parte está la lógica que determina cómo deben de encender los LEDs en este caso representando una variable binaria.
 
-<img width="216" alt="Captura de pantalla 2023-05-18 a la(s) 10 24 10 a m" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/6a5c72f0-441c-4959-b69c-db3a7de0d6b0">
-
-
+<img width="216" alt="Captura de pantalla 2023-05-18 a la(s) 10 24 10 a m" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/700d2901-3df7-4e43-8298-021ea5af53f5">
