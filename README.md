@@ -45,7 +45,7 @@ Para el funcionamiento de la blue-pill se necesita la instalación del siguiente
 
 ## Lógica del programa en código de alto nivel 
 
-<img width="438" alt="CodigoLogica" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/30b4a4d4-ab0c-4799-855e-0c65814f692e">
+<img width="305" alt="CLogica" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/fde6bcd2-c8b5-49cd-8cb0-9b5a10832b53">
 
 ## Funciones
 
