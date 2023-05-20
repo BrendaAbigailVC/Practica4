@@ -47,9 +47,8 @@ Para el funcionamiento de la blue-pill se necesita la instalación del siguiente
 ## Funciones
 
 ### wait_ms
-Cuando se presiona un botón mecánico, dos contactos de metal chocan entre sí e inmediatamente rebotan un par de veces antes de fijarse. Estos rebotes producen múltiples señales en unos pocos milisegundos debido a los efectos de rebote.
-Existen soluciones tanto de hardware como de software para eliminar los efectos de rebote. Estas soluciones se denominan debouncing(antirrebote).
-La técnica de eliminación de rebotes de software más fácil es la técnica wait-and-see. Cuando el programa detecta que se presiona un botón, vuelve a examinar la señal de entrada después de un breve retraso, generalmente entre 20 y 50 ms. Si la señal de entrada aún muestra que se presionó el botón, el programa informa que el botón se presionó efectivamente. 
+
+Esta función permite generar el retraso necesario que necesita la función is_button_pressed para eliminar el efecto debouncing.
 
 <img width="216" alt="Captura de pantalla 2023-05-18 a la(s) 10 29 41 a m" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/a8683f94-51e4-4fa4-b51a-ef3a41b6616e">
 
@@ -60,6 +59,8 @@ La función detecta si se están presionando alguno de los dos botones y a parti
 
 
 ### is_button_pressed
+
+Esta función permite eliminar el efecto debouncing. Cuando se presiona un botón mecánico, dos contactos de metal chocan entre sí e inmediatamente rebotan un par de veces antes de fijarse. Estos rebotes producen múltiples señales en unos pocos milisegundos debido a los efectos de rebote. Existen soluciones tanto de hardware como de software para eliminar los efectos de rebote. Estas soluciones se denominan debouncing(antirrebote). La técnica de eliminación de rebotes de software más fácil es la técnica wait-and-see. Cuando el programa detecta que se presiona un botón, vuelve a examinar la señal de entrada después de un breve retraso. Si la señal de entrada aún muestra que se presionó el botón, el programa informa que el botón se presionó efectivamente.
 
 <img width="205" alt="Captura de pantalla 2023-05-19 a la(s) 11 01 07 a m" src="https://github.com/BrendaAbigailVC/Practica4/assets/109320578/a058bd18-d7ce-4dfe-b0b2-74db23c0b1cb">
 
