@@ -2,7 +2,6 @@
 
 ## Funcionamiento del proyecto
 
-
 ## Paquetes necesarios:
 Para el funcionamiento de la blue-pill se necesita la instalación del siguiente software necesario.
 
@@ -20,6 +19,7 @@ Para el funcionamiento de la blue-pill se necesita la instalación del siguiente
 * alias arm-objdump=arm-none-eabi-objdump
 
 * alias arm-objcopy=arm-none-eabi-objcopy
+*
 ## Compilación del software
 
 * Lectura: Lee la tarjeta de desarrollo blue pill mediante el comando: st-flash read dummy.bin 0 0xFFFF
@@ -30,16 +30,28 @@ Para el funcionamiento de la blue-pill se necesita la instalación del siguiente
 
 ![CircuitoPrac6](https://github.com/BrendaAbigailVC/Practica4/assets/109320578/57d957ac-4e26-408e-858b-940d2ad60bf6)
 
-
-
 ## Lógica del programa en código de alto nivel 
 
 ## Configuraciones
-* Configurar SysTick control y el estado del registro SysTick_CTRL.
-* Configurar Systic reload y especificar el numero de ticks entre dos interrupciones.
-* Limpiar la ocurrencia del registro Systick_VAL.
-* Configurar la prioridad de la interrupcion al programar SBC->SHP
-* Habilitar SysTick control y el estatus del registro SysTick.
+### Configuración de perifericos
+* Primero se habilita el reloj en el puerto A.
+* Configura los pines del 0 al 7 en el puerto GPIOA_CRL.
+* Configura los pines del 8 al 15 en GPIOA_CRH.
+
+### Configuración del EXTI10
+* Configurar EXTI_FTSR para deshabilitar la detección de flanco descendente.
+* Mascara para habilitar bit 10 (EXTI10) y bit 11(EXTIO11).
+* Configurar EXTI_RTSR para habilitar la detección de flanco ascendente.
+* Configurar EXTI_IMR para habilitar interrupciones en EXTI10 y EXTI11.
+* Habilitar la interrupción EXTI10 y EXTI11 en el NVIC.
+
+### Configuración del SysTick
+* Configurar el registro de control (SysTick control) y el estado de (SysTick_CTRL).
+* Establecer el registro de valores de recarga del (Systic_LOAD) y especificar el numero de ticks entre dos interrupciones.
+* Borrar el registro de valor actual (SysTick_VAL).
+* Configurar la prioridad de interrupción programando el SBC->SHP.
+* Habilitar la interrupción del SysTick cconfigurando el bit TICKINT (SysTick_CTRL) para habilitar SysTick IRQ y SysTick timer.
+
 ## Funciones
 ### main
 
