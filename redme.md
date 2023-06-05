@@ -34,7 +34,7 @@ Para el funcionamiento de la blue-pill se necesita la instalación del siguiente
 
 ## Configuraciones
 ### Configuración de perifericos
-* Primero se habilita el reloj en el puerto A.
+* Habilita el reloj en el puerto A.
 * Configura los pines del 0 al 7 en el puerto GPIOA_CRL.
 * Configura los pines del 8 al 15 en GPIOA_CRH.
 
@@ -54,8 +54,24 @@ Para el funcionamiento de la blue-pill se necesita la instalación del siguiente
 
 ## Funciones
 ### main
+En la primera parte se hace la configuración de los pines de salida y de entrada de la blue pill en este caso los pines del A0 al A9 funcionan como salidas y los pines A10 y A11 funcionan como entradas. 
+Luego se declara la configuracion del EXTI15_10 para configurar EXTI_10 y EXTI_11.
 
-En la primera parte de esta función se hace la configuración de los pines de salida y de entrada de la blue pill. 
-En la segunda parte está la lógica que determina cómo deben de encender los LEDs en este caso representando una variable binaria.
+### SysTick_Initialize
 
-### main
+### SysTick_Handler
+Esta funcion se encarga de manejar las interrupciones del EXTI.
+* Lo primero que hace es leer el estado del registro EXTI_PR para verificar si se ha producido la interrupción en el EXTI. EXTI_PR es un registro que indica que interrupciones ocurrieron el EXTI10 o EXTI11.
+* Si las interrupciones ocurrieron entonces se puede leer el estado del puerto A11 o A10 para indicar si esta presionado o no.
+
+### Reset_Handler
+
+### output
+
+### EXTI15_10_Handler
+
+### delay
+
+### Default_Handler
+
+### check_speed
