@@ -31,8 +31,6 @@ Para el funcionamiento de la blue-pill se necesita la instalación del siguiente
 
 ![CircuitoPrac6](https://github.com/BrendaAbigailVC/Practica4/assets/109320578/57d957ac-4e26-408e-858b-940d2ad60bf6)
 
-## Lógica del programa en código de alto nivel 
-
 ## Configuraciones
 ### Configuración de perifericos
 Los pasos para configurar los puertos como entradas y salidas son:
@@ -92,6 +90,3 @@ Permite generar interrupciones periódicas. En esta función se inicializan los 
 ### SysTick_Handler
 
 Permite ir decrementando el valor del retraso en unidades de tiempo en el programa y así poder notar la velocidad con la que prenden los leds.
-
-
-![image](https://github.com/BrendaAbigailVC/Practica4/assets/109320578/1b26b22a-8f96-43ff-8334-3e10a8bd2adc)
