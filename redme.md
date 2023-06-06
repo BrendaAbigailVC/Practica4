@@ -1,7 +1,9 @@
 # Practica de laboratorio 6
 
 ## Funcionamiento del proyecto
-El funcionamiento del proyecto consiste en implementar un contador binario de 10 bits. La salida de esto se notará en 10 leds. Este contador aumenta la cuenta cada segundo. Al oprimir un botón el contador cambia su modo de operación ascendente a descendente. Así mismo al presionar otro botón el contador aumenta su velocidad x2, x4, x8. Cuando la velocidad aumente una vez más después de estar en x8 entonces la velocidad regresará a x1.
+El funcionamiento del proyecto consiste en implementar un contador binario de 10 bits. La salida de esto se notará en 10 leds. Este contador aumenta la cuenta cada segundo. 
+
+Al oprimir un botón el contador cambia su modo de operación ascendente a descendente. Así mismo al presionar otro botón el contador aumenta su velocidad x2, x4, x8. Cuando la velocidad aumente una vez más después de estar en x8 entonces la velocidad regresará a x1.
 
 ## Paquetes necesarios:
 Para el funcionamiento de la blue-pill se necesita la instalación del siguiente software necesario.
@@ -20,7 +22,7 @@ Para el funcionamiento de la blue-pill se necesita la instalación del siguiente
 * alias arm-objdump=arm-none-eabi-objdump
 
 * alias arm-objcopy=arm-none-eabi-objcopy
-*
+
 ## Compilación del software
 
 * Lectura: Lee la tarjeta de desarrollo blue pill mediante el comando: st-flash read dummy.bin 0 0xFFFF
@@ -90,3 +92,14 @@ Permite generar interrupciones periódicas. En esta función se inicializan los 
 ### SysTick_Handler
 
 Permite ir decrementando el valor del retraso en unidades de tiempo en el programa y así poder notar la velocidad con la que prenden los leds.
+
+## Hardware del sistema
+
+Los leds se conectan con su respectiva resistencia y con los puertos de salida que en este caso van del PA0 al PA9.
+Los botones se conectan con los puertos PA10 y PA11, sin embargo para eliminar el efecto rebote, de la señal de hardware, se utiliza un disparador schmitt.
+
+![CIRCUITO](https://github.com/BrendaAbigailVC/Practica4/assets/109320578/c978f11f-75db-47fd-81e5-0f19c4269109)
+
+El diagrama del schmitt es el siguiente:
+
+![SN74HC14N](https://github.com/BrendaAbigailVC/Practica4/assets/109320578/a5066e69-c764-4983-873e-912c3f1cb1f4)
