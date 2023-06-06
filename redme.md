@@ -37,10 +37,9 @@ Para el funcionamiento de la blue-pill se necesita la instalación del siguiente
 ### Configuración de perifericos
 Los pasos para configurar los puertos como entradas y salidas son:
 
-
-Habilita el reloj en el puerto requerido para ello se configura se habilita el bit en el registro RCC_APB2ENR_OFFSET según corresponda.
-Configurar el modo de funcionamiento de los puertos.
-Configurar la dirección de los pines para ello se configuran los bits correspondientes en los registros de dirección de los puertos para establecer la dirección deseada.
+* Habilita el reloj en el puerto requerido para ello se configura se habilita el bit en el registro RCC_APB2ENR_OFFSET según corresponda.
+* Configurar el modo de funcionamiento de los puertos.
+* Configurar la dirección de los pines para ello se configuran los bits correspondientes en los registros de dirección de los puertos para establecer la dirección deseada.
 
 ### Configuración del EXTI10_11
 EXTI es un módulo periférico que se encarga de las interrupciones externas en el microcontrolador.
