@@ -31,7 +31,7 @@ Para el funcionamiento de la blue-pill se necesita la instalación del siguiente
 
 ## Diagrama electronico del circuito
 
-![CircuitoPrac6](https://github.com/BrendaAbigailVC/Practica4/assets/109320578/57d957ac-4e26-408e-858b-940d2ad60bf6)
+![Circuitop6](https://github.com/BrendaAbigailVC/Practica4/assets/109320578/fd7ad543-43b9-47b4-8628-46d573ced8fb)
 
 ## Configuraciones
 ### Configuración de perifericos
