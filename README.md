@@ -63,9 +63,8 @@ Usamos counter que será la única que se almacene en la pila, speed que tendrá
 
 ## Marco de main.s
 
-![image](https://github.com/JessicaLaraC/Laboratorio6/assets/110583656/92c966a5-1ecc-4487-bad9-b6715a270074)
+![WhatsApp Image 2023-06-07 at 4 54 00 PM](https://github.com/BrendaAbigailVC/Practica4/assets/109320578/724d2719-cbe8-4aa5-9da8-fe33b7468927)
 
- 
 
 # Funciones  
 
@@ -123,10 +122,12 @@ Lectura de la tarjeta de desarrollo blue pill
 Conectar al progrma STM32CubeProg ejecutar los comando de make, make clean para quitar los archivos .o, despues make para crear los archivos. o, en progrma STM32CubeProg cargamos el archivo en binario.
 # Circuito
 
-![Untitled Sketch_bb](https://github.com/JessicaLaraC/Laboratorio6/assets/110583656/110a2242-5c9d-4b69-9167-7fe3a4bd9724)
+![WhatsApp Image 2023-06-07 at 4 52 36 PM (1)](https://github.com/BrendaAbigailVC/Practica4/assets/109320578/3abf9ee5-9d8a-4ec3-b83f-178eb806f02e)
+
 
 Para la odificacion de del Schmitt Tiger se se utilizo el siguiente esquema:
 Se utiliza para eliminar el rebote de los botones.
-![descarga (1)](https://github.com/JessicaLaraC/Laboratorio6/assets/110583656/a3a96aab-a04e-4d6d-a9c4-75ec7c06a7f0)
+
+![WhatsApp Image 2023-06-07 at 4 52 36 PM](https://github.com/BrendaAbigailVC/Practica4/assets/109320578/b1bfaa51-04ea-4244-9581-9172fcdbe30f)
 
  
